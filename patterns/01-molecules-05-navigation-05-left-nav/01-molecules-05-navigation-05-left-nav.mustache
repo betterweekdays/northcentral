@@ -4,6 +4,9 @@
             &lt;li class=&quot;{{ class }}&quot;&gt;
                 {{# link }}
                 &lt;a href=&quot;{{ link }}&quot;&gt;
+                    {{#new}}
+                        &lt;i class=&quot;fa {{ new }} notification-menu-item&quot;&gt;&lt;/i&gt;
+                    {{/new}}
                     &lt;i class=&quot;fa {{ icon }}&quot;&gt;&lt;/i&gt;
                     &lt;span&gt;{{ title }}&lt;/span&gt;
                 &lt;/a&gt;

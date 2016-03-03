@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/libs/nanoscroller.css" />
 
 		<!-- global styles -->
-		<link rel="stylesheet" href="../../css/theme/theme_styles.css?1454528368" media="all" />
+		<link rel="stylesheet" href="../../css/theme/theme_styles.css?0" media="all" />
 
         <!-- this page specific styles -->
 
@@ -33,8 +33,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1454528368" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1454528368" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?0" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?0" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -58,16 +58,6 @@
                     <span class="fa fa-bars"></span>
                     <span class="x-small">Menu</span>
                 </button>
-
-                <div class="nav-no-collapse navbar-left pull-left hidden-sm hidden-xs">
-                    <ul class="nav navbar-nav pull-left">
-                        <li>
-                            <a class="btn" id="make-small-nav">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
 
                 <div class="nav-no-collapse pull-right" id="header-nav">
                     <ul class="nav navbar-nav pull-right">
@@ -244,27 +234,24 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="main-box card">
+                                            <div class="main-box card job-detail-card">
                                                 <h2>Company</h2>
                                                 <div class="row">
-                                                <div class="col-sm-4">
-                                                        <img src="/img/job-new/va-logo.png" />
-                                                    </div>
-                                                    <div class="col-sm-8">
-                                                    <h4>Veterans Health Administration</h4>
+                                                    <div class="col-sm-8 col-sm-offset-2 text-center">
+                                                        <h4>
+                                                            <a href="#">
+                                                                Veterans Affairs                                        </a>
+                                                        </h4>
+                                                        <img src="/img/job-new/va-logo.png">
                                                         <ul>
-                                                            <li>Formed: 1718</li>
-                                                            <li>Annual Budget: $47 billion</li>
-                                                            <li>Employees: 279,792</li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-sm-12">
                                                         <ul class="bottom-links">
-                                                            <li><a href="#">Website</a></li>
-                                                            <li><a href="#">Wikipedia</a></li>
-                                                            <li><a href="#">Google Plus</a></li>
+                                                            <li><a href="#" target="_blank">Website</a></li>
+                                                            <li><a href="#">Details</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -272,27 +259,25 @@
                                         </div>
 
                                         <div class="col-sm-6">
-                                            <div class="main-box card-orange card">
+                                            <div class="main-box card-orange card job-detail-card">
                                                 <h2>Location</h2>
                                                 <div class="row">
-                                                    <div class="col-sm-4">
+                                                    <div class="col-sm-8 col-sm-offset-2 text-center">
+                                                        <h4>San Diego, CA</h4>
                                                         <img src="/img/job-new/map.png" />
-                                                    </div>
-                                                    <div class="col-sm-8">
-                                                        <h4>Indianapolis, IN</h4>
-                                                        <ul>
-                                                            <li>Population: 820,445</li>
-                                                            <li>Avg. Monthly Cost: 2.5k</li>
-                                                            <li>Humid Continental Climate</li>
-                                                        </ul>
+                                                        <!--<ul>
+                                                            <li>Population: <i class="fa fa-star-half"></i>N/A</li>
+                                                            <li>Avg. Monthly Cost: <i class="fa fa-star-half"></i>N/A</li>
+                                                            <li>Climate <i class="fa fa-star-half"></i>N/A</li>
+                                                        </ul>-->
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-sm-12">
                                                         <ul class="bottom-links">
-                                                            <li><a href="#">Events</a></li>
-                                                            <li><a href="#">Points of Interest</a></li>
-                                                            <li><a href="#">Neighborhoods</a></li>
+                                                            <li><a href="http://eventful.com/events?q=music&amp;l=San Diego+CA" target="_blank">Events</a></li>
+                                                            <!--<li><a href="#">Points of Interest</a></li>
+                                                            <li><a href="#">Neighborhoods</a></li>-->
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -301,27 +286,31 @@
                                         </div>
 
                                         <div class="col-sm-6">
-                                            <div class="main-box card-purple card">
-                                                <h2>Schedule</h2>
+                                            <div class="main-box card-purple card job-detail-card">
+                                                <h2>Quality</h2>
                                                 <div class="row">
-                                                    <div class="col-sm-4">
-                                                        <img src="/img/job-new/clock.png" />
+                                                    <div class="col-sm-12 text-center margin-top-60">
+                                                        <div class="col-sm-6">
+                                                            <h4>Work / Life Balance <a data-original-title="How current employees feel about not having to work all the time." href="#" data-toggle="tooltip" title="" class="fa fa-question-circle"></a></h4>
+                                                            <p>&#9733;&#9733;&#9733;&#189;</p>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <h4>Opportunity <a data-original-title="How current employees feel about the ability to advance within the company." href="#" data-toggle="tooltip" title="" class="fa fa-question-circle"></a></h4>
+                                                            <p>&#9733;&#9733;&#9733;&#9733;&#189;</p>
+                                                        </div>
                                                     </div>
-                                                    <div class="col-sm-8">
-                                                        <h4>40hr Week</h4>
-                                                        <ul>
-                                                            <li>8 hr days</li>
-                                                            <li>5 days per week</li>
-                                                            <li>3 weeks time off</li>
-                                                        </ul>
+                                                    <div class="col-sm-12 text-center">
+                                                        <div class="col-xs-6">
+                                                            <h4>Culture & Values <a data-original-title="How employees measure company culture." href="#" data-toggle="tooltip" title="" class="fa fa-question-circle"></a></h4>
+                                                            <p>&#9733;&#9733;</p>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <h4>Leadership <a data-original-title="How employees measure the vision and confidence in the company\'s executive team." href="#" data-toggle="tooltip" title="" class="fa fa-question-circle"></a></h4>
+                                                            <p>&#9733;&#9733;&#9733;&#9733;&#189;</p>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <ul class="bottom-links">
-                                                            <li><a href="#">Vacation Policy</a></li>
-                                                            <li><a href="#">Sick / Personal Day Policy</a></li>
-                                                        </ul>
+                                                    <div class="col-sm-12 text-center margin-top-20">
+                                                        <p class="small"><a href='http://www.glassdoor.com/index.htm'>powered by <img src='http://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /></a></p>
                                                     </div>
                                                 </div>
 
@@ -329,21 +318,18 @@
                                         </div>
 
                                         <div class="col-sm-6">
-                                            <div class="main-box card-yellow card">
-                                                <h2>Compensation</h2>
+                                            <div class="main-box card-yellow card job-detail-card">
+                                                <h2>Industry Median Compensation</h2>
                                                 <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <img src="/img/job-new/compensation-graph.png" />
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <h4>$29,600 Annual</h4>
-                                                        <ul>
-                                                            <li>$2,466 Monthly</li>
-                                                            <li>$15.40 Hourly</li>
-                                                        </ul>
+                                                    <div class="col-sm-12 text-center">
+                                                        <p class="big margin-top-60">
+                                                            ~$55,510 Annual</p>
+                                                        <p>
+                                                            ($4,625 Monthly / $28.90 Hourly)
+                                                        </p>
+                                                        <p>Industry Median <a data-original-title="The average salary for jobs in this industry, not specific to this role at this company." href="#" data-toggle="tooltip" title="" class="small"><i class="fa fa-question-circle"></i></a></p>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
 
@@ -358,19 +344,13 @@
                                                     <div id="myTabContent" class="tab-content">
                                                         <div role="tabpanel" class="tab-pane fade in active" id="you" aria-labelledBy="home-tab">
                                                             <p>This position is located in PCS/Clinical Support Service. Incumbent in this roles will be responsible for performing a variety of administrative and clerical duties and is the liaison between the nursing staff in their assigned area and customers both internal and external to the medical center.</p>
-                                                            <p>Specialized experience includes, but is not limited, to the following:</p>
+                                                            <h3>Responsibilities</h3>
                                                             <ul>
-                                                            <li>Scheduling, canceling and rescheduling patients discharge appointments.</li>
-                                                            <li>Accurately and timely processing patient information, admits, discharge, appointments and transfers in computer system.</li>
-                                                            <li>Arranging and coordinating in-patient procedure appointments for timeliness.</li>
-                                                            <li>Maintaining office supplies.</li>
-                                                            <li>Providing professional and courteous customer service.</li>
-                                                            <li>Assisting with the orientation/on the job training of new staff.</li>
-                                                            <li>Completing work orders and contacting appropriate staff when requested for emergency repairs or special requests.</li>
-                                                            <li>Inputting and extracting data of a highly technical nature.</li>
-                                                            <li>Interpreting and transcribing doctors orders.</li>
-                                                            <li>Maintaining patient records, scanning, quality control</li>
-                                                            </ul>                                                        </div>
+                                                                <li>Attention to Detail, Dependability, Cooperation, Integrity</li>
+                                                                <li>Record patients' medical history, vital statistics, or information such as test results in medical records.</li>
+                                                                <li>Prepare treatment rooms for patient examinations, keeping the rooms neat and clean.</li>
+                                                            </ul>
+                                                        </div>
                                                         <div role="tabpanel" class="tab-pane fade" id="the-job" aria-labelledBy="profile-tab">
                                                             <p>This is where the job description goes, if it exists.</p>
                                                             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
@@ -602,10 +582,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1454528368">
+	<script id="pl-js-polyfill-insert-0">
 		(function() {
 			if (self != top) {
-				var cb = '1454528368';
+				var cb = '0';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -614,10 +594,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1454528368">
+	<script id="pl-js-insert-0">
 		(function() {
 			if (self != top) {
-				var cb = '1454528368';
+				var cb = '0';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

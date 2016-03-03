@@ -15,16 +15,6 @@
                     &lt;span class=&quot;x-small&quot;&gt;Menu&lt;/span&gt;
                 &lt;/button&gt;
 
-                &lt;div class=&quot;nav-no-collapse navbar-left pull-left hidden-sm hidden-xs&quot;&gt;
-                    &lt;ul class=&quot;nav navbar-nav pull-left&quot;&gt;
-                        &lt;li&gt;
-                            &lt;a class=&quot;btn&quot; id=&quot;make-small-nav&quot;&gt;
-                                &lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;
-                            &lt;/a&gt;
-                        &lt;/li&gt;
-                    &lt;/ul&gt;
-                &lt;/div&gt;
-
                 &lt;div class=&quot;nav-no-collapse pull-right&quot; id=&quot;header-nav&quot;&gt;
                     &lt;ul class=&quot;nav navbar-nav pull-right&quot;&gt;
                         &lt;li class=&quot;dropdown&quot;&gt;
@@ -131,12 +121,12 @@
                                     &lt;div class=&quot;margin-bottom-16 hidden-lg&quot;&gt;
                                         &lt;!-- Button trigger modal --&gt;
                                         &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
-                                            New Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
+                                            Send Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
                                         &lt;/button&gt;                                    &lt;/div&gt;
                                     &lt;div class=&quot;margin-bottom-16 hidden-lg&quot;&gt;
                                         &lt;!-- Button trigger modal --&gt;
                                         &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#create-note-modal&quot;&gt;
-                                            New Note &lt;span class=&quot;fa fa-paperclip&quot;&gt;&lt;/span&gt;
+                                            Create Note &lt;span class=&quot;fa fa-paperclip&quot;&gt;&lt;/span&gt;
                                         &lt;/button&gt;
                                     &lt;/div&gt;
                                     &lt;div class=&quot;margin-bottom-16 hidden-lg&quot;&gt;
@@ -178,38 +168,132 @@
                                             &lt;/div&gt;
                                         &lt;/div&gt;                                    &lt;/div&gt;
 
-                                    &lt;div class=&quot;row&quot;&gt;
-                                        &lt;div class=&quot;col-lg-6&quot;&gt;
-                                            &lt;div class=&quot;main-box card&quot;&gt;
-                                                &lt;h2&gt;Personal Details&lt;/h2&gt;
-                                                &lt;div class=&quot;main-box-body clearfix&quot;&gt;
-                                                    &lt;div class=&quot;col-sm-12&quot;&gt;
-                                                        &lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;
-                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Email: &lt;a href=&quot;#&quot;&gt;sonya.frost@gmail.com&lt;/a&gt;&lt;/li&gt;
-                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Degree/Program: &lt;strong&gt;Medical Assistant&lt;/strong&gt;&lt;/li&gt;
-                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Phone: &lt;strong&gt;(312) 999-9999&lt;/strong&gt;&lt;/li&gt;
-                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Resume: &lt;span class=&quot;file&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-00-career-services-cs-student-resume/04-pages-00-career-services-cs-student-resume.html&quot; type=&quot;application/vnd.openxmlformats-officedocument.wordprocessingml.document; length=18266&quot;&gt;my_resume.docx&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;# Personalized Jobs: &lt;a href=&quot;../../patterns/04-pages-00-career-services-cs-job-matches/04-pages-00-career-services-cs-job-matches.html&quot;&gt;8&lt;/a&gt;&lt;/li&gt;
+                                    &lt;div class=&quot;main-box tab-box minimal-tabs&quot;&gt;
+                                        &lt;div class=&quot;bs-example bs-example-tabs&quot; data-example-id=&quot;togglable-tabs&quot;&gt;
+                                            &lt;ul id=&quot;myTabs&quot; class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+                                                &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#personal-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;personal-tab&quot;&gt;Personal Details&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#resume-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;resume-tab&quot;&gt;Resume&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#jobpref-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;jobpref-tab&quot; aria-expanded=&quot;true&quot;&gt;Job Preferences&lt;/a&gt;&lt;/li&gt;
+                                                &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#previews-tab&quot; role=&quot;tab&quot; data-toggle=&quot;tab&quot; aria-controls=&quot;previews-tab&quot;&gt;Previews&lt;/a&gt;&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                            &lt;div id=&quot;myTabContent&quot; class=&quot;tab-content&quot;&gt;
+                                                &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade in active pre-scrollable&quot; id=&quot;personal-tab&quot; aria-labelledBy=&quot;personal-tab&quot;&gt;
+                                                    &lt;div class=&quot;row&quot;&gt;
+                                                        &lt;div class=&quot;col-md-12&quot;&gt;
+                                                            &lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;
+                                                                &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Email: &lt;a href=&quot;#&quot;&gt;sonya.frost@gmail.com&lt;/a&gt;&lt;/li&gt;
+                                                                &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Degree/Program: &lt;strong&gt;Medical Assistant&lt;/strong&gt;&lt;/li&gt;
+                                                                &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Phone: &lt;strong&gt;(312) 999-9999&lt;/strong&gt;&lt;/li&gt;
+                                                            &lt;/ul&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade pre-scrollable&quot; id=&quot;resume-tab&quot; aria-labelledBy=&quot;resume-tab&quot;&gt;
+                                                    &lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;
+                                                        &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Resume: &lt;span class=&quot;file&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-00-career-services-cs-student-resume/04-pages-00-career-services-cs-student-resume.html&quot; type=&quot;application/vnd.openxmlformats-officedocument.wordprocessingml.document; length=18266&quot;&gt;my_resume.docx&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;# Personalized Jobs: &lt;a href=&quot;../../patterns/04-pages-00-career-services-cs-job-matches/04-pages-00-career-services-cs-job-matches.html&quot;&gt;8&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;/div&gt;
+                                                &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade pre-scrollable&quot; id=&quot;jobpref-tab&quot; aria-labelledBy=&quot;jobpref-tab&quot;&gt;
+                                                    &lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;
+                                                        &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Job Areas: &lt;strong&gt;General Management / Business, Marketing, Project Management&lt;/strong&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Locations: &lt;strong&gt;St. Louis, MO&lt;/strong&gt;&lt;/li&gt;
+                                                        &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Experience: &lt;strong&gt;1-2 Years&lt;/strong&gt;&lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                                &lt;/div&gt;
+                                                &lt;div role=&quot;tabpanel&quot; class=&quot;tab-pane fade pre-scrollable&quot; id=&quot;previews-tab&quot; aria-labelledBy=&quot;previews-tab&quot;&gt;
+                                                    &lt;div class=&quot;main-box-body clearfix&quot;&gt;
+                                                        &lt;p&gt;Total: 15&lt;/p&gt;
+                                                        &lt;ul class=&quot;list-group to-dos&quot;&gt;
+                                                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                                                &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                                    1 day ago
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;col-xs-9&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;&lt;strong&gt;Medical Assistant&lt;/strong&gt;&lt;/a&gt; &lt;span class=&quot;small&quot;&gt;(Chicago, IL - Rush)&lt;/span&gt;&lt;/div&gt;
+                                                                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                                                &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                                    3 days ago
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;col-xs-9&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;&lt;strong&gt;Awesome Medical Assistant&lt;/strong&gt;&lt;/a&gt; &lt;span class=&quot;small&quot;&gt;(St. Louis, MO - BJC Healthcare)&lt;/span&gt;&lt;/div&gt;
+                                                                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                                                &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                                    4 days ago
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;col-xs-9&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;&lt;strong&gt;Medical Assistant&lt;/strong&gt;&lt;/a&gt; &lt;span class=&quot;small&quot;&gt;(Chicago, IL - Rush)&lt;/span&gt;&lt;/div&gt;
+                                                                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                                                &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                                    4 days ago
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;col-xs-9&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;&lt;strong&gt;Awesome Medical Assistant&lt;/strong&gt;&lt;/a&gt; &lt;span class=&quot;small&quot;&gt;(St. Louis, MO - BJC Healthcare)&lt;/span&gt;&lt;/div&gt;
+                                                                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                                                &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                                    5 days ago
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;col-xs-9&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;&lt;strong&gt;Medical Assistant&lt;/strong&gt;&lt;/a&gt; &lt;span class=&quot;small&quot;&gt;(Chicago, IL - Rush)&lt;/span&gt;&lt;/div&gt;
+                                                                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                                                &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                                    7 days ago
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;col-xs-9&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;&lt;strong&gt;Awesome Medical Assistant&lt;/strong&gt;&lt;/a&gt; &lt;span class=&quot;small&quot;&gt;(St. Louis, MO - BJC Healthcare)&lt;/span&gt;&lt;/div&gt;
+                                                                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                                                &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                                    10 days ago
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;col-xs-9&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;&lt;strong&gt;Medical Assistant&lt;/strong&gt;&lt;/a&gt; &lt;span class=&quot;small&quot;&gt;(Chicago, IL - Rush)&lt;/span&gt;&lt;/div&gt;
+                                                                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                                                &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                                    13 days ago
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;col-xs-9&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;&lt;strong&gt;Awesome Medical Assistant&lt;/strong&gt;&lt;/a&gt; &lt;span class=&quot;small&quot;&gt;(St. Louis, MO - BJC Healthcare)&lt;/span&gt;&lt;/div&gt;
+                                                                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                                                &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                                    14 days ago
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;col-xs-9&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;&lt;strong&gt;Medical Assistant&lt;/strong&gt;&lt;/a&gt; &lt;span class=&quot;small&quot;&gt;(Chicago, IL - Rush)&lt;/span&gt;&lt;/div&gt;
+                                                                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                                                &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                                    14 days ago
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;col-xs-9&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;&lt;strong&gt;Awesome Medical Assistant&lt;/strong&gt;&lt;/a&gt; &lt;span class=&quot;small&quot;&gt;(St. Louis, MO - BJC Healthcare)&lt;/span&gt;&lt;/div&gt;
+                                                                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                                                &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                                    15 days ago
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;col-xs-9&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;&lt;strong&gt;Medical Assistant&lt;/strong&gt;&lt;/a&gt; &lt;span class=&quot;small&quot;&gt;(Chicago, IL - Rush)&lt;/span&gt;&lt;/div&gt;
+                                                                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                                            &lt;/li&gt;
+                                                            &lt;li class=&quot;list-group-item&quot;&gt;
+                                                                &lt;div class=&quot;col-xs-3&quot;&gt;
+                                                                    17 days ago
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;col-xs-9&quot;&gt;&lt;a href=&quot;../../patterns/04-pages-03-job-j-posting/04-pages-03-job-j-posting.html&quot;&gt;&lt;strong&gt;Awesome Medical Assistant&lt;/strong&gt;&lt;/a&gt; &lt;span class=&quot;small&quot;&gt;(St. Louis, MO - BJC Healthcare)&lt;/span&gt;&lt;/div&gt;
+                                                                &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
+                                                            &lt;/li&gt;
                                                         &lt;/ul&gt;
                                                     &lt;/div&gt;
                                                 &lt;/div&gt;
                                             &lt;/div&gt;
-                                        &lt;/div&gt;
-
-                                        &lt;div class=&quot;col-lg-6&quot;&gt;
-                                            &lt;div class=&quot;main-box card-orange card&quot;&gt;
-                                                &lt;h2&gt;Job Preferences&lt;/h2&gt;
-                                                &lt;div class=&quot;main-box-body clearfix&quot;&gt;
-                                                    &lt;div class=&quot;col-sm-12&quot;&gt;
-                                                        &lt;ul class=&quot;fa-ul no-padding no-image&quot;&gt;
-                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Job Areas: &lt;strong&gt;General Management / Business, Marketing, Project Management&lt;/strong&gt;&lt;/li&gt;
-                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Locations: &lt;strong&gt;St. Louis, MO&lt;/strong&gt;&lt;/li&gt;
-                                                            &lt;li&gt;&lt;i class=&quot;fa-li&quot;&gt;&lt;/i&gt;Experience: &lt;strong&gt;1-2 Years&lt;/strong&gt;&lt;/li&gt;
-                                                        &lt;/ul&gt;
-                                                    &lt;/div&gt;
-                                                &lt;/div&gt;
-                                            &lt;/div&gt;
-                                        &lt;/div&gt;
+                                        &lt;/div&gt;&lt;!-- /example --&gt;
                                     &lt;/div&gt;
 
                                     &lt;div class=&quot;main-box tab-box minimal-tabs&quot;&gt;
@@ -292,7 +376,7 @@
                                                                                     left:40,
                                                                                     top:20,
                                                                                     bottom: '0%',
-                                                                                    width: '90%',
+                                                                                    width: '90%'
                                                                                 },
                                                                                 lineWidth: 2,
                                                                                 pointSize: 3,
@@ -317,14 +401,14 @@
                                                                                         color: '#555'
                                                                                     },
                                                                                     format:'M/d/yy',
-                                                                                    gridlines: { count: 7},
+                                                                                    gridlines: {
+                                                                                        count: 7,
+                                                                                        color: 'transparent'
+                                                                                    },
                                                                                     textStyle: {
                                                                                         color: '#555',
                                                                                         fontName: 'Proxima Nova',
                                                                                         fontSize: 12
-                                                                                    },
-                                                                                    gridlines: {
-                                                                                        color: 'transparent'
                                                                                     }
                                                                                 },
                                                                                 vAxis: {
@@ -833,13 +917,13 @@
                                 &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
                                     &lt;!-- Button trigger modal --&gt;
                                     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#new-message-modal&quot;&gt;
-                                        New Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
+                                        Send Message &lt;span class=&quot;fa fa-send&quot;&gt;&lt;/span&gt;
                                     &lt;/button&gt;                                &lt;/div&gt;
 
                                 &lt;div class=&quot;col-lg-4 margin-bottom-16 visible-lg&quot;&gt;
                                     &lt;!-- Button trigger modal --&gt;
                                     &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#create-note-modal&quot;&gt;
-                                        New Note &lt;span class=&quot;fa fa-paperclip&quot;&gt;&lt;/span&gt;
+                                        Create Note &lt;span class=&quot;fa fa-paperclip&quot;&gt;&lt;/span&gt;
                                     &lt;/button&gt;
                                 &lt;/div&gt;
 

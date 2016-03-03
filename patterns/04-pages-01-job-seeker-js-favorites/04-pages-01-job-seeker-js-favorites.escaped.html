@@ -15,16 +15,6 @@
                     &lt;span class=&quot;x-small&quot;&gt;Menu&lt;/span&gt;
                 &lt;/button&gt;
 
-                &lt;div class=&quot;nav-no-collapse navbar-left pull-left hidden-sm hidden-xs&quot;&gt;
-                    &lt;ul class=&quot;nav navbar-nav pull-left&quot;&gt;
-                        &lt;li&gt;
-                            &lt;a class=&quot;btn&quot; id=&quot;make-small-nav&quot;&gt;
-                                &lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;
-                            &lt;/a&gt;
-                        &lt;/li&gt;
-                    &lt;/ul&gt;
-                &lt;/div&gt;
-
                 &lt;div class=&quot;nav-no-collapse pull-right&quot; id=&quot;header-nav&quot;&gt;
                     &lt;ul class=&quot;nav navbar-nav pull-right&quot;&gt;
                         &lt;li class=&quot;dropdown&quot;&gt;
@@ -61,6 +51,7 @@
                                     &lt;/li&gt;
                                     &lt;li class=&quot;active&quot;&gt;
                                         &lt;a href=&quot;/patterns/04-pages-01-job-seeker-js-favorites/04-pages-01-job-seeker-js-favorites.html&quot;&gt;
+                                                &lt;i class=&quot;fa fa-circle notification-menu-item&quot;&gt;&lt;/i&gt;
                                             &lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;
                                             &lt;span&gt;Favorites&lt;/span&gt;
                                         &lt;/a&gt;
@@ -91,6 +82,7 @@
                                     &lt;/li&gt;
                                     &lt;li class=&quot;&quot;&gt;
                                         &lt;a href=&quot;/patterns/04-pages-01-job-seeker-js-advice/04-pages-01-job-seeker-js-advice.html&quot;&gt;
+                                                &lt;i class=&quot;fa fa-circle notification-menu-item&quot;&gt;&lt;/i&gt;
                                             &lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt;
                                             &lt;span&gt;Advice&lt;/span&gt;
                                         &lt;/a&gt;
@@ -111,6 +103,11 @@
                     &lt;div class=&quot;col-lg-12&quot;&gt;
 
                         &lt;div class=&quot;row hidden-lg&quot;&gt;
+                            &lt;div class=&quot;col-xs-12 margin-bottom-16&quot;&gt;
+                                &lt;!-- Button trigger modal --&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#create-to-do-student-modal&quot;&gt;
+                                    New To-Do &lt;span class=&quot;fa fa-plus&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;                            &lt;/div&gt;
                             &lt;div class=&quot;col-sm-12&quot;&gt;
                                 &lt;div class=&quot;main-box clearfix&quot;&gt;
                                     &lt;div class=&quot;main-box-body clearfix bdubs-box&quot;&gt;
@@ -128,7 +125,7 @@
                                                                 BDubs Bot
                                                             &lt;/div&gt;
                                                             &lt;div class=&quot;headline text&quot;&gt;
-                                                                    &lt;p&gt;Use favorites to see what to do next for your prioritized jobs and employers!&lt;/p&gt;
+                                                                    &lt;p&gt;Use favorites to see what to do next for your prioritized jobs and employers! If you see a blue dot next to a to-do, it means I created it for you automatically.&lt;/p&gt;
 
 
                                                             &lt;/div&gt;
@@ -144,6 +141,7 @@
                                     &lt;/div&gt;
                                 &lt;/div&gt;                            &lt;/div&gt;
                         &lt;/div&gt;
+
 
 
                         &lt;div class=&quot;row&quot;&gt;
@@ -164,7 +162,9 @@
                                             &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
                                         &lt;/li&gt;
                                         &lt;li class=&quot;list-group-item&quot;&gt;
-                                            &lt;div class=&quot;col-md-8 col-sm-9 col-xs-7 col-sm-offset-1 col-xs-offset-1&quot;&gt;Look up hiring contact info for Rush Hospital.&lt;/div&gt;
+                                            &lt;div class=&quot;col-md-1 col-sm-1 col-xs-1&quot;&gt;&lt;i class=&quot;fa fa-circle notification-to-do-item&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                                            &lt;div class=&quot;col-md-8 col-sm-9 col-xs-7&quot;&gt;
+                                                Look up hiring contact info for Rush Hospital.&lt;/div&gt;
                                             &lt;div class=&quot;col-md-1 col-sm-1 col-xs-2 text-right&quot;&gt;&lt;/div&gt;
                                             &lt;div class=&quot;col-md-1 col-sm-1 col-xs-2&quot;&gt;
                                                 &lt;button class=&quot;btn btn-success&quot; title=&quot;Done!&quot;&gt;
@@ -174,7 +174,8 @@
                                             &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
                                         &lt;/li&gt;
                                         &lt;li class=&quot;list-group-item&quot;&gt;
-                                            &lt;div class=&quot;col-md-8 col-sm-9 col-xs-7 col-sm-offset-1 col-xs-offset-1&quot;&gt;Call and notify hiring contact at Rush Hospital of application to Medical Assistant position&lt;/div&gt;
+                                            &lt;div class=&quot;col-md-1 col-sm-1 col-xs-1&quot;&gt;&lt;i class=&quot;fa fa-circle notification-to-do-item&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                                            &lt;div class=&quot;col-md-8 col-sm-9 col-xs-7&quot;&gt;Call and notify hiring contact at Rush Hospital of application to Medical Assistant position&lt;/div&gt;
                                             &lt;div class=&quot;col-md-1 col-sm-1 col-xs-2 text-right&quot;&gt;&lt;/div&gt;
                                             &lt;div class=&quot;col-md-1 col-sm-1 col-xs-2&quot;&gt;
                                                 &lt;button class=&quot;btn btn-success&quot; title=&quot;Done!&quot;&gt;
@@ -184,7 +185,8 @@
                                             &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
                                         &lt;/li&gt;
                                         &lt;li class=&quot;list-group-item&quot;&gt;
-                                            &lt;div class=&quot;col-md-8 col-sm-9 col-xs-7 col-sm-offset-1 col-xs-offset-1&quot;&gt;Research others on LinkedIn with the job title Medical Assistant and learn from their work history&lt;/div&gt;
+                                            &lt;div class=&quot;col-md-1 col-sm-1 col-xs-1&quot;&gt;&lt;i class=&quot;fa fa-circle notification-to-do-item&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                                            &lt;div class=&quot;col-md-8 col-sm-9 col-xs-7&quot;&gt;Research others on LinkedIn with the job title Medical Assistant and learn from their work history&lt;/div&gt;
                                             &lt;div class=&quot;col-md-1 col-sm-1 col-xs-2 text-right&quot;&gt;&lt;/div&gt;
                                             &lt;div class=&quot;col-md-1 col-sm-1 col-xs-2&quot;&gt;
                                                 &lt;button class=&quot;btn btn-success&quot; title=&quot;Done!&quot;&gt;
@@ -194,7 +196,8 @@
                                             &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
                                         &lt;/li&gt;
                                         &lt;li class=&quot;list-group-item&quot;&gt;
-                                            &lt;div class=&quot;col-md-8 col-sm-9 col-xs-7 col-sm-offset-1 col-xs-offset-1&quot;&gt;Explore if any of your mentors or contacts work at Rushn Hospital&lt;/div&gt;
+                                            &lt;div class=&quot;col-md-1 col-sm-1 col-xs-1&quot;&gt;&lt;i class=&quot;fa fa-circle notification-to-do-item&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                                            &lt;div class=&quot;col-md-8 col-sm-9 col-xs-7&quot;&gt;Explore if any of your mentors or contacts work at Rushn Hospital&lt;/div&gt;
                                             &lt;div class=&quot;col-md-1 col-sm-1 col-xs-2 text-right&quot;&gt;&lt;/div&gt;
                                             &lt;div class=&quot;col-md-1 col-sm-1 col-xs-2&quot;&gt;
                                                 &lt;button class=&quot;btn btn-success&quot; title=&quot;Done!&quot;&gt;
@@ -204,7 +207,8 @@
                                             &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;
                                         &lt;/li&gt;
                                         &lt;li class=&quot;list-group-item&quot;&gt;
-                                            &lt;div class=&quot;col-md-8 col-sm-9 col-xs-7 col-sm-offset-1 col-xs-offset-1&quot;&gt; Did you finish the online application to the Medical Assistant job at Rush Hospital?&lt;/div&gt;
+                                            &lt;div class=&quot;col-md-1 col-sm-1 col-xs-1&quot;&gt;&lt;i class=&quot;fa fa-circle notification-to-do-item&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+                                            &lt;div class=&quot;col-md-8 col-sm-9 col-xs-7&quot;&gt; Did you finish the online application to the Medical Assistant job at Rush Hospital?&lt;/div&gt;
                                             &lt;div class=&quot;col-md-1 col-sm-1 col-xs-2 text-right&quot;&gt;&lt;/div&gt;
                                             &lt;div class=&quot;col-md-1 col-sm-1 col-xs-2&quot;&gt;
                                                 &lt;button class=&quot;btn btn-success&quot; title=&quot;Done!&quot;&gt;
@@ -325,6 +329,12 @@
                                 &lt;/div&gt;
                             &lt;/div&gt;
 
+                            &lt;div class=&quot;col-lg-4 margin-bottom-16&quot;&gt;
+                                &lt;!-- Button trigger modal --&gt;
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#create-to-do-student-modal&quot;&gt;
+                                    New To-Do &lt;span class=&quot;fa fa-plus&quot;&gt;&lt;/span&gt;
+                                &lt;/button&gt;                            &lt;/div&gt;
+
                             &lt;div class=&quot;col-lg-4 visible-lg&quot;&gt;
                                 &lt;div class=&quot;main-box clearfix&quot;&gt;
                                     &lt;div class=&quot;main-box-body clearfix bdubs-box&quot;&gt;
@@ -342,7 +352,7 @@
                                                                 BDubs Bot
                                                             &lt;/div&gt;
                                                             &lt;div class=&quot;headline text&quot;&gt;
-                                                                    &lt;p&gt;Use favorites to see what to do next for your prioritized jobs and employers!&lt;/p&gt;
+                                                                    &lt;p&gt;Use favorites to see what to do next for your prioritized jobs and employers! If you see a blue dot next to a to-do, it means I created it for you automatically.&lt;/p&gt;
 
 
                                                             &lt;/div&gt;
@@ -394,6 +404,39 @@
                     &lt;/p&gt;
                 &lt;/footer&gt;
                 &lt;!-- End Footer --&gt;            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;create-to-do-student-modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+                &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;New To-Do&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt;
+                &lt;form&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;recipient-name&quot; class=&quot;control-label&quot;&gt;Job or Employer:&lt;/label&gt;
+                        &lt;select class=&quot;form-control&quot;&gt;
+                            &lt;option&gt;&lt;/option&gt;
+                            &lt;option&gt;Medical Assistant&lt;/option&gt;
+                            &lt;option&gt;Phlebotomist&lt;/option&gt;
+                            &lt;option&gt;Monstanto&lt;/option&gt;
+                        &lt;/select&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;label for=&quot;to-do-title&quot; class=&quot;control-label&quot;&gt;Title:&lt;/label&gt;
+                        &lt;input id=&quot;to-do-title&quot; class=&quot;form-control&quot; placeholder=&quot;&quot; type=&quot;text&quot; &gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot; onclick=&quot;window.location='../../patterns/04-pages-00-career-services-cs-dashboard/04-pages-00-career-services-cs-dashboard.html';&quot;&gt;Go&lt;/button&gt;
+            &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;

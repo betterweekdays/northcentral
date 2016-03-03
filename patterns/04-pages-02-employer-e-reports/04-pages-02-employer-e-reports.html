@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="pl">
 	<head>
-		<title>Better Weekdays Pattern Lab</title>
+		<title>Better Weekdays: Employer Dashboard</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width" />
 
@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/libs/nanoscroller.css" />
 
 		<!-- global styles -->
-		<link rel="stylesheet" href="../../css/theme/theme_styles.css?1454528368" media="all" />
+		<link rel="stylesheet" href="../../css/theme/theme_styles.css?0" media="all" />
 
         <!-- this page specific styles -->
         <link rel="stylesheet" type="text/css" href="../../css/libs/select2.css">
@@ -34,15 +34,15 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1454528368" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1454528368" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?0" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?0" media="all" />
 		
 
 		<!-- End Pattern Lab -->
 
 	
 	</head>
-	<body class="fixed-header" id="">
+	<body class="home" id="">
 		<div id="theme-wrapper" class="jobs-home">
     <!-- Begin .header -->
     <header class="navbar" id="header-navbar">
@@ -59,16 +59,6 @@
                     <span class="fa fa-bars"></span>
                     <span class="x-small">Menu</span>
                 </button>
-
-                <div class="nav-no-collapse navbar-left pull-left hidden-sm hidden-xs">
-                    <ul class="nav navbar-nav pull-left">
-                        <li>
-                            <a class="btn" id="make-small-nav">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
 
                 <div class="nav-no-collapse pull-right" id="header-nav">
                     <ul class="nav navbar-nav pull-right">
@@ -111,21 +101,15 @@
                                         </a>
                                     </li>
                                     <li class="">
-                                        <a href="/patterns/04-pages-02-employer-e-activity/04-pages-02-employer-e-activity.html">
-                                            <i class="fa fa-heartbeat"></i>
-                                            <span>Activity</span>
+                                        <a href="/patterns/04-pages-02-employer-e-student-playlist/04-pages-02-employer-e-student-playlist.html">
+                                            <i class="fa fa-users"></i>
+                                            <span>Students</span>
                                         </a>
                                     </li>
                                     <li class="active">
                                         <a href="/patterns/04-pages-02-employer-e-reports/04-pages-02-employer-e-reports.html">
                                             <i class="fa fa-list"></i>
                                             <span>Reports</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="/patterns/04-pages-02-employer-e-resources/04-pages-02-employer-e-resources.html">
-                                            <i class="fa fa-info-circle"></i>
-                                            <span>Help &amp; Resources</span>
                                         </a>
                                     </li>
                                     <li class="">
@@ -178,9 +162,7 @@
                                         <div class="form-group">
                                             <label for="data">Show me:</label>
                                             <select name="dropdownmain" id="data" title="">
-                                                <option value="job-seekers">job seekers</option>
-                                                <option value="jobs">jobs</option>
-                                                <option value="activities">activities</option>
+                                                <option value="job-seekers">students</option>
                                             </select>
                                         </div>
 
@@ -201,82 +183,6 @@
                                                 <option value="expressed-interest">expressed interest in applying</option>
                                             </select>
                                         </div>
-
-                                        <div class="form-group">
-                                            <select name="employers" id="" title="">
-                                                <option data-parent="active-account">an active account</option>
-                                                <option data-parent="posted-job">posted a job</option>
-                                                <option data-parent="viewed-profile">viewed a profile</option>
-                                                <option data-parent="messaged">messaged a job seeker</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <select name="jobs" id="" title="">
-                                                <option data-parent="viewed">viewed</option>
-                                                <option data-parent="interested">interested in applied to</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <select name="activities" id="" title="">
-                                                <option data-parent="completed">been completed</option>
-                                            </select>
-                                        </div>
-
-                                        <!--Shows if Jobs selected -->
-
-                                        <div class="form-group jobs-filter report-filter">
-                                            <p>Filter by:</p>
-                                            <div class="form-group form-group-select1 chosen-container chosen-container-multi chosen-with-drop">
-                                                    <label class="hidden">Degree / Program</label>
-                                                    <select name="filter" style="width:200px" id="sel3Multi" multiple>
-                                                            <option value=""></option>
-                                                            <option value="Accounting/Auditing">Accounting/Auditing</option>
-                                                            <option value="Nursing">Nursing</option>
-                                                            <option value="Technology">Technology</option>
-                                                    </select>
-                                            </div>
-                                            <div class="form-group form-group-select2 chosen-container chosen-container-multi chosen-with-drop">
-                                                    <label class="hidden">Location</label>
-                                                    <select name="filter" style="width:200px" id="sel4Multi" multiple>
-                                                            <option value=""></option>
-                                                            <option value="California">California</option>
-                                                            <option value="Illinois">Illinois</option>
-                                                            <option value="New York">New York</option>
-                                                    </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="hidden" for="company">Company</label>
-                                                <input type="text" class="form-control" id="company" placeholder="Company">
-                                            </div>
-
-                                        </div>
-
-
-                                        <!--/-->
-
-                                        <!--Shows if Activities selected -->
-
-                                        <div class="form-group activities-filter report-filter">
-                                            <p>Filter by:</p>
-
-                                            <div class="form-group">
-                                                <select name="role" id="" title="">
-                                                    <option data-parent="role1">Role Option 1</option>
-                                                    <option data-parent="role2">Role Option 2</option>
-                                                    <option data-parent="role3">Role Option 3</option>
-                                                    <option data-parent="role4">Role Option 4</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="name" class="hidden">Name</label>
-                                                <input type="text" class="form-control" id="name" placeholder="Name">
-                                            </div>
-
-                                        </div>
-
-                                        <!--/-->
 
                                     </form>
 
@@ -357,10 +263,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1454528368">
+	<script id="pl-js-polyfill-insert-0">
 		(function() {
 			if (self != top) {
-				var cb = '1454528368';
+				var cb = '0';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -369,10 +275,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1454528368">
+	<script id="pl-js-insert-0">
 		(function() {
 			if (self != top) {
-				var cb = '1454528368';
+				var cb = '0';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

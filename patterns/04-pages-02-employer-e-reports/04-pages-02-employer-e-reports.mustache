@@ -49,9 +49,7 @@
                                         &lt;div class=&quot;form-group&quot;&gt;
                                             &lt;label for=&quot;data&quot;&gt;Show me:&lt;/label&gt;
                                             &lt;select name=&quot;dropdownmain&quot; id=&quot;data&quot; title=&quot;&quot;&gt;
-                                                &lt;option value=&quot;job-seekers&quot;&gt;job seekers&lt;/option&gt;
-                                                &lt;option value=&quot;jobs&quot;&gt;jobs&lt;/option&gt;
-                                                &lt;option value=&quot;activities&quot;&gt;activities&lt;/option&gt;
+                                                &lt;option value=&quot;job-seekers&quot;&gt;students&lt;/option&gt;
                                             &lt;/select&gt;
                                         &lt;/div&gt;
 
@@ -72,84 +70,6 @@
                                                 &lt;option value=&quot;expressed-interest&quot;&gt;expressed interest in applying&lt;/option&gt;
                                             &lt;/select&gt;
                                         &lt;/div&gt;
-
-                                        &lt;div class=&quot;form-group&quot;&gt;
-                                            &lt;select name=&quot;employers&quot; id=&quot;&quot; title=&quot;&quot;&gt;
-                                                &lt;option data-parent=&quot;active-account&quot;&gt;an active account&lt;/option&gt;
-                                                &lt;option data-parent=&quot;posted-job&quot;&gt;posted a job&lt;/option&gt;
-                                                &lt;option data-parent=&quot;viewed-profile&quot;&gt;viewed a profile&lt;/option&gt;
-                                                &lt;option data-parent=&quot;messaged&quot;&gt;messaged a job seeker&lt;/option&gt;
-                                            &lt;/select&gt;
-                                        &lt;/div&gt;
-
-                                        &lt;div class=&quot;form-group&quot;&gt;
-                                            &lt;select name=&quot;jobs&quot; id=&quot;&quot; title=&quot;&quot;&gt;
-                                                &lt;option data-parent=&quot;viewed&quot;&gt;viewed&lt;/option&gt;
-                                                &lt;option data-parent=&quot;interested&quot;&gt;interested in applied to&lt;/option&gt;
-                                            &lt;/select&gt;
-                                        &lt;/div&gt;
-
-                                        &lt;div class=&quot;form-group&quot;&gt;
-                                            &lt;select name=&quot;activities&quot; id=&quot;&quot; title=&quot;&quot;&gt;
-                                                &lt;option data-parent=&quot;completed&quot;&gt;been completed&lt;/option&gt;
-                                            &lt;/select&gt;
-                                        &lt;/div&gt;
-
-                                        &lt;!--Shows if Jobs selected --&gt;
-
-                                        &lt;div class=&quot;form-group jobs-filter report-filter&quot;&gt;
-                                            &lt;p&gt;Filter by:&lt;/p&gt;
-                                            &lt;div class=&quot;form-group form-group-select1 chosen-container chosen-container-multi chosen-with-drop&quot;&gt;
-                                                {{#job}}
-                                                    &lt;label class=&quot;hidden&quot;&gt;{{ select-label }}&lt;/label&gt;
-                                                    &lt;select name=&quot;filter&quot; style=&quot;width:200px&quot; id=&quot;sel{{ id }}Multi&quot; multiple&gt;
-                                                        {{#options}}
-                                                            &lt;option value=&quot;{{ option }}&quot;&gt;{{ option }}&lt;/option&gt;
-                                                        {{/options}}
-                                                    &lt;/select&gt;
-                                                {{/job}}
-                                            &lt;/div&gt;
-                                            &lt;div class=&quot;form-group form-group-select2 chosen-container chosen-container-multi chosen-with-drop&quot;&gt;
-                                                {{#location}}
-                                                    &lt;label class=&quot;hidden&quot;&gt;{{ select-label }}&lt;/label&gt;
-                                                    &lt;select name=&quot;filter&quot; style=&quot;width:200px&quot; id=&quot;sel{{ id }}Multi&quot; multiple&gt;
-                                                        {{#options}}
-                                                            &lt;option value=&quot;{{ option }}&quot;&gt;{{ option }}&lt;/option&gt;
-                                                        {{/options}}
-                                                    &lt;/select&gt;
-                                                {{/location}}
-                                            &lt;/div&gt;
-                                            &lt;div class=&quot;form-group&quot;&gt;
-                                                &lt;label class=&quot;hidden&quot; for=&quot;company&quot;&gt;Company&lt;/label&gt;
-                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;company&quot; placeholder=&quot;Company&quot;&gt;
-                                            &lt;/div&gt;
-
-                                        &lt;/div&gt;
-
-
-                                        &lt;!--/--&gt;
-
-                                        &lt;!--Shows if Activities selected --&gt;
-
-                                        &lt;div class=&quot;form-group activities-filter report-filter&quot;&gt;
-                                            &lt;p&gt;Filter by:&lt;/p&gt;
-
-                                            &lt;div class=&quot;form-group&quot;&gt;
-                                                &lt;select name=&quot;role&quot; id=&quot;&quot; title=&quot;&quot;&gt;
-                                                    &lt;option data-parent=&quot;role1&quot;&gt;Role Option 1&lt;/option&gt;
-                                                    &lt;option data-parent=&quot;role2&quot;&gt;Role Option 2&lt;/option&gt;
-                                                    &lt;option data-parent=&quot;role3&quot;&gt;Role Option 3&lt;/option&gt;
-                                                    &lt;option data-parent=&quot;role4&quot;&gt;Role Option 4&lt;/option&gt;
-                                                &lt;/select&gt;
-                                            &lt;/div&gt;
-                                            &lt;div class=&quot;form-group&quot;&gt;
-                                                &lt;label for=&quot;name&quot; class=&quot;hidden&quot;&gt;Name&lt;/label&gt;
-                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;name&quot; placeholder=&quot;Name&quot;&gt;
-                                            &lt;/div&gt;
-
-                                        &lt;/div&gt;
-
-                                        &lt;!--/--&gt;
 
                                     &lt;/form&gt;
 
